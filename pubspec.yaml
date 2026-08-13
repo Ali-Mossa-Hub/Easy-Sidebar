@@ -1,9 +1,6 @@
 name: easy_sidebar
 
-description: >
-Building desktop application or even web dashboard:
-have many chalenges most of it to have a side bar without andy conflict with:
-other widgets and easy to maintain with more features and animations:
+description: Building desktop application or even web dashboard have many chalenges most of it to have a side bar without andy conflict with other widgets and easy to maintain with more features and animations
 
 version: 0.1.0-alpha.1+1
 
