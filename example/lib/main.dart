@@ -1,6 +1,6 @@
 import 'package:easy_sidebar/easy_sidebar.dart';
-import 'package:example/pages/page_one.dart';
-import 'package:example/pages/page_tow.dart';
+import 'package:example/page_one.dart';
+import 'package:example/page_tow.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
