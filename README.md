@@ -5,9 +5,11 @@ Turn your app’s navigation into a seamless experience with a beautiful, custom
 
 ## Demo
 
-[▶️ Watch the full demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/assets/Demos/desktop)
-[▶️ Watch the full demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/assets/Demos/mobile)
-[▶️ Watch the full demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/assets/Demos/web)
+## 🎥 Demo
+
+- [▶️ Desktop Demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/tree/main/assets/demos/desktop.gif)
+- [▶️ Mobile Demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/tree/main/assets/demos/mobile.gif)
+- [▶️ Web Demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/tree/main/assets/demos/web.gif)
 
 ## Features
 
@@ -70,18 +72,7 @@ class HomePage extends StatelessWidget {
 }
 ```
 
-### Customization
-
-#### Sidebar Width
-
-```dart
-    Sidebar(
-        minWidth: 50,
-        maxWidth: 300,
-    );
-```
-
-#### Animation
+### Animation
 
 ```dart
 SideBarAnimation.none
