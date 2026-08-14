@@ -7,9 +7,9 @@ Turn your app’s navigation into a seamless experience with a beautiful, custom
 
 ## 🎥 Demo
 
-- [▶️ Desktop Demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/tree/main/assets/demos/desktop.gif)
-- [▶️ Mobile Demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/tree/main/assets/demos/mobile.gif)
-- [▶️ Web Demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/tree/main/assets/demos/web.gif)
+- [▶️ Desktop Demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/blob/main/assets/demos/desktop.gif?raw=true)
+- [▶️ Mobile Demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/blob/main/assets/demos/mobile.gif?raw=true)
+- [▶️ Web Demo](https://github.com/Ali-Mossa-Hub/Easy-Sidebar/blob/main/assets/demos/web.gif?raw=true)
 
 ## Features
 
