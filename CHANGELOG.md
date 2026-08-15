@@ -9,3 +9,7 @@
 ## 0.1.0-alpha.5+3
 
 - Improved the README structure and layout.
+
+## 0.1.0-alpha.6+4
+
+- Solve SideBarButton position and width issue.
