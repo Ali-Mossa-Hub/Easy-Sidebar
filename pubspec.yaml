@@ -1,8 +1,8 @@
 name: easy_sidebar
 
-description: Building desktop application or even web dashboard have many chalenges most of it to have a side bar without andy conflict with other widgets and easy to maintain with more features and animations
+description: A flexible and customizable sidebar for Flutter dashboards
 
-version: 0.1.0-alpha.3+1
+version: 0.1.0-alpha.1.2+2
 
 repository: https://github.com/Ali-Mossa-Hub/Easy-Sidebar
 homepage: https://github.com/Ali-Mossa-Hub/Easy-Sidebar

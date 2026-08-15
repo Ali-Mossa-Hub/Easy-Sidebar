@@ -185,9 +185,8 @@ SidebarIconButton(
 
 ## Navigation
 
-- you should use the navigation function that package provides if you want the side bar widget
-still appear if you navigate between pages
-- also you should this function only with pages comes under MainPage() widget
+- You should use the navigation function provided by the package if you want the sidebar widget to remain visible when navigating between pages
+- also you should use this function only with pages comes under MainPage() widget
 
 ```dart
 import 'package:easy_sidebar/easy_sidebar.dart';
@@ -238,7 +237,6 @@ class SecondPage extends StatelessWidget {
 - 🧩 No navigation package required
 - ⚡ Lightweight and easy to integrate
   
-```markdown
 ## Requirements
 
 - sdk: `^3.11.0`
