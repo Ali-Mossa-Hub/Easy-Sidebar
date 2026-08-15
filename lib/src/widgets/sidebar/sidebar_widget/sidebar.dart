@@ -41,7 +41,7 @@ class Sidebar extends StatelessWidget {
     this.sidebarIconButton,
     super.key,
   }) : assert(
-         (maxWidth != minWidth) || (maxWidth < minWidth),
+         ((maxWidth != minWidth) || (maxWidth < minWidth)) && (minWidth >= 50),
          'The width is not recommended',
        ),
        assert(

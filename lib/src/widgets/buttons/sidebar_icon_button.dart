@@ -26,28 +26,30 @@ class SidebarIconButton extends StatelessWidget {
         mainAxisAlignment: .end,
         children: [
           Flexible(
-            child: AnimatedSwitcher(
-              duration: mainPageScop.duration,
-              reverseDuration: mainPageScop.duration,
-              switchInCurve: mainPageScop.curve,
-              switchOutCurve: mainPageScop.curve,
-              child: IconButton(
-                key: ValueKey(isExpand),
-                onPressed: () => selectItemCubit.changeSidebarWidth(
-                  isExpand ? maxWidth! : minWidth!,
-                  isExpand,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: AnimatedSwitcher(
+                duration: mainPageScop.duration,
+                reverseDuration: mainPageScop.duration,
+                switchInCurve: mainPageScop.curve,
+                switchOutCurve: mainPageScop.curve,
+                child: IconButton(
+                  key: ValueKey(isExpand),
+                  onPressed: () => selectItemCubit.changeSidebarWidth(
+                    isExpand ? maxWidth! : minWidth!,
+                    isExpand,
+                  ),
+                  icon: mainPageScop.selectItemCubit.sidebarMiddleware
+                      .returnRightIconButton(
+                        expandIcon,
+                        collapseIcon,
+                        direction,
+                        isExpand,
+                      ),
                 ),
-                icon: mainPageScop.selectItemCubit.sidebarMiddleware
-                    .returnRightIconButton(
-                      expandIcon,
-                      collapseIcon,
-                      direction,
-                      isExpand,
-                    ),
               ),
             ),
           ),
-          const SizedBox(width: 10),
         ],
       ),
       selector: (ChangeSidebarWidthState state) {

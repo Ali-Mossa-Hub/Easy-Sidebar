@@ -33,6 +33,8 @@ class MyHomePage extends StatelessWidget {
       curve: Curves.linear,
       mainPagesDuration: Duration(milliseconds: 350),
       sidebar: Sidebar(
+        borderRadius: BorderRadiusGeometry.circular(30),
+        sidebarMargin: EdgeInsetsDirectional.all(10),
         animation: SideBarAnimation.scale,
         minWidth: 50,
         topSidebar: Image.asset('assets/logo.png'),
