@@ -1,7 +1,11 @@
-## 0.1.0-alpha.1.1+1
+## 0.1.0-alpha.1+1
 
-- the main functionalities
+- Added the initial sidebar functionality.
 
 ## 0.1.0-alpha.4+2
 
-- updating README file content and view
+- Updated the README content and layout.
+
+## 0.1.0-alpha.5+3
+
+- Improved the README structure and layout.

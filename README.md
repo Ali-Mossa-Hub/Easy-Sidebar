@@ -20,7 +20,7 @@ Turn your app’s navigation into a seamless experience with a beautiful, custom
 
 ## Install
 
-In the pubspec.yaml of your flutter project, add the following dependency:
+In your Flutter project's pubspec.yaml file, add the following dependency:
 
 ```dart
 dependencies:
@@ -29,7 +29,7 @@ dependencies:
 
 ## Getting started
 
-In your library file add this import:
+In your Dart file, add the following import:
 
 ```dart
 import 'package:easy_sidebar/easy_sidebar.dart';
@@ -84,17 +84,17 @@ SideBarAnimation.sized
 ```
 
 ```dart
-//the main page handle sidebar widget and navigations
+//the main page handles the sidebar widget and navigations
 MainPage(
-// close the side bar in the begining of the app
+// Close the sidebar when the app starts
       sideBarIsClosed: true,
-// animation type of main pages navigations
+// Animation type for main page navigation
       animation: SideBarAnimation.scale,
-// curve type of animation
+// Curve type for the animation
       curve: Curves.linear,
-// duration of pages navigations
+// Duration of page navigation
       mainPagesDuration: Duration(milliseconds: 350),
-// the side bar widget
+// The sidebar widget.
       sidebar: Sidebar(
         //...
       )
@@ -105,36 +105,36 @@ MainPage(
 
 ```dart
 Sidebar(
-// side bar collaps duration
+// Sidebar collapse duration
         sideBarDuration: Duration(milliseconds: 320),
-// the collapsing width
+// The collapsed width
         minWidth: 50,
-// the expanding width
+// The expanded width
         maxWidth: 300,
-// side bar collaps animatoin curve style
+// Sidebar collapse animation curve
         sideBarItemCurve: Curves.bounceIn,
-// the side bar item animation
+// Sidebar item animation
         animation: SideBarAnimation.scale,
-// selecting side bar item duration
+// Duration of the sidebar item selection animation
         sideBarItemDuration: Duration(milliseconds: 320),
-// side bar widget background
+// Sidebar background color
         backgroundColor: Colors.blueAccent,
-// side bar widget gradiant (should only use either the gradient or the backgroundColor)
+// Sidebar gradient (use either gradient or backgroundColor, not both)
         gradient: LinearGradient(colors: [Colors.blue, Colors.blueAccent]),
-// side bar widget borders raduis
+// Sidebar border radius
         borderRadius: BorderRadiusDirectional.only(
           bottomEnd: Radius.circular(20),
           topEnd: Radius.circular(20),
         ),
-// the side bar widget margin
+// Sidebar margin
         sidebarMargin: EdgeInsetsDirectional.all(10),
-// list of side bar items
+// List of sidebar items
         listSidebarItems:[
             //...
         ] 
-// expanding-collapsing button
+// Expand/collapse button
         sidebarIconButton: SidebarIconButton(),
-// the top side of the side bar widget
+// Widget displayed at the top of the sidebar
         topSidebar: Image.asset('assets/logo.png'),
 
 );
@@ -146,11 +146,11 @@ Sidebar(
 SidebarItem(
     title: 'home',
     icon: Icon(Icons.home),
-// the page we want to navigate to it on pressing
+// The page to navigate to when the item is pressed
     page: PageOne(),
-// side bar item border raduis
+// Sidebar item border radius
     borderRadius: 30,
-// side bar item hover color
+// Sidebar item hover colorside bar item hover color
     hoverColor: Colors.black.withAlpha(40),
     iconColor: Colors.black,
     iconSize: 20,
@@ -162,9 +162,9 @@ SidebarItem(
         vertical: 10,
         horizontal: 8,
     ),
-//side bar item selecting background color
+//Sidebar item selected background color
     selectBackgroundColor: Colors.black12,
-//side bar item selecting color (text and icon)
+//Sidebar item selected color (text and icon)
     selectColor: Colors.white,
     textStyle: TextStyle(
         //...
@@ -176,17 +176,17 @@ SidebarItem(
 
 ```dart
 SidebarIconButton(
-// collapsing widget
+// collapsed widget
     collapseIcon: Icon(Icons.keyboard_arrow_left_rounded),
-// expanding widget
+// expanded widget
     expandIcon: Icon(Icons.keyboard_arrow_right_rounded),
 );
 ```
 
 ## Navigation
 
-- You should use the navigation function provided by the package if you want the sidebar widget to remain visible when navigating between pages
-- also you should use this function only with pages comes under MainPage() widget
+- You should use the navigation function provided by the package if you want the sidebar widget to remain visible while navigating between pages
+- You should also use this function only with pages that are contained within the MainPage() widget
 
 ```dart
 import 'package:easy_sidebar/easy_sidebar.dart';
@@ -241,11 +241,9 @@ class SecondPage extends StatelessWidget {
 
 - sdk: `^3.11.0`
 - flutter: `>=1.17.0`
-- flutter_bloc: `^9.1.1`
-- get_it: `^9.2.1`
 
 ## License
 
 This package is licensed under the BSD 3-Clause License.
 
-See the [LICENSE](LICENSE) file for details
+See the LICENSE file for details
