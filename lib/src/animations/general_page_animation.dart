@@ -1,11 +1,25 @@
 import 'package:flutter/material.dart';
 
+/// the animation of navigation pages and
+///  changin side bar items
+///
 class GeneralPageAnimation extends StatelessWidget {
+  /// Animatoin curve
   final Curve curve;
+
+  /// The navigated page
   final Widget page;
+
+  /// iF there no need animation
   final bool nonAnimated;
+
+  /// Animation duration
   final Duration duration;
+
+  /// The animation effect type
   final AnimatedSwitcherTransitionBuilder transitionBuilder;
+
+  /// Create the animation widget
   const GeneralPageAnimation({
     required this.curve,
     required this.page,

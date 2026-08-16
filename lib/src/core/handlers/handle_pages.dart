@@ -3,8 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../util/errors/scope_error.dart';
 import '../../logic/slect_item/select_item_cubit.dart';
 
+/// Public API for page navigation
 class HandlePages {
   SelectItemCubit? _selectItemCubit;
+
+  /// navigate to another page
   Future<void> pushPage(BuildContext context, Widget page) async {
     try {
       _selectItemCubit ??= context.read<SelectItemCubit>();
@@ -17,6 +20,7 @@ class HandlePages {
     }
   }
 
+  /// remove current page from stack
   void popPage(BuildContext context) {
     try {
       if (_selectItemCubit != null) {

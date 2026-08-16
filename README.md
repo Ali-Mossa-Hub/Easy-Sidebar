@@ -3,8 +3,6 @@
 
 Turn your app’s navigation into a seamless experience with a beautiful, customizable sidebar
 
-## Demo
-
 ## 🎥 Demo
 
 | Mobile | Desktop | Web |
@@ -34,8 +32,6 @@ In your Dart file, add the following import:
 ```dart
 import 'package:easy_sidebar/easy_sidebar.dart';
 ```
-
-start using the package.
 
 ## Usage
 

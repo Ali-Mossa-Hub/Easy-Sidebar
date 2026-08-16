@@ -3,12 +3,22 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../main_page/main_page_scops/main_page_scop.dart';
 import '../../logic/change_sidebar_width/change_sidebar_width_cubit.dart';
 
+///
 // ignore: must_be_immutable
 class SidebarIconButton extends StatelessWidget {
+  ///The maxed vailable width
   double? maxWidth;
+
+  ///The minest vailable width
   double? minWidth;
+
+  ///
   final Widget expandIcon;
+
+  ///
   final Widget collapseIcon;
+
+  ///
   SidebarIconButton({
     this.expandIcon = const Icon(Icons.keyboard_arrow_right_rounded),
     this.collapseIcon = const Icon(Icons.keyboard_arrow_left_rounded),

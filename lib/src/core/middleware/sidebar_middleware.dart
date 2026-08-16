@@ -4,14 +4,19 @@ import '../../util/errors/page_error.dart';
 import '../../util/enums/sidebar_animation.dart';
 import '../../logic/slect_item/select_item_cubit.dart';
 
+///
 class SidebarMiddleware {
   final List<Function> _pages = [];
 
+  /// check the if tow of widgets are equal
   bool isEqual(Widget firstWidget, Widget secondtWidget) =>
       firstWidget.hashCode == secondtWidget.hashCode;
+
+  /// hide item title when its null or empty
   bool returnHideTitleOnCollaps(String? title) =>
       (title == null || title.isEmpty);
 
+  /// check the current page
   Widget getCurrentPage() {
     if (_pages.isEmpty) {
       throw PageError("pages list is empty");
@@ -19,6 +24,7 @@ class SidebarMiddleware {
     return _pages.last();
   }
 
+  /// get customized animation
   Widget getSideBarAnimation(
     Widget widget,
     Animation<double> animation,
@@ -61,6 +67,7 @@ class SidebarMiddleware {
     }
   }
 
+  /// return the right page depend on SelectItemState state
   Widget returnBlocSelectorSelectItemState(SelectItemState selectItemState) {
     if (selectItemState is SuccessSelectItemState) {
       return selectItemState.page;
@@ -71,6 +78,7 @@ class SidebarMiddleware {
     }
   }
 
+  /// return sidebar correct icon
   Widget returnRightIconButton(
     Widget expandIcon,
     Widget collapseIcon,
@@ -84,6 +92,7 @@ class SidebarMiddleware {
       ? collapseIcon
       : expandIcon;
 
+  /// return sidebar item text style
   TextStyle returnTextStyle(
     Widget selectedWidget,
     Widget page,
@@ -96,6 +105,7 @@ class SidebarMiddleware {
             : defaultTextStyle.copyWith(color: selectColor))
       : textStyle ?? defaultTextStyle;
 
+  /// navigate to another page
   void moveToAnotherPage(Widget page, {bool isSidebarItem = false}) {
     if (isSidebarItem) {
       _pages.clear();
@@ -103,6 +113,7 @@ class SidebarMiddleware {
     _pages.add(() => page);
   }
 
+  /// printing Error function
   void printErrorMessage(String errorMessage, {String errorType = ''}) {
     if (kDebugMode) {
       final errorTypeMessage = errorType.isNotEmpty
@@ -112,5 +123,6 @@ class SidebarMiddleware {
     }
   }
 
+  /// remove the last navigated page
   void removeLastPage() => _pages.removeLast();
 }

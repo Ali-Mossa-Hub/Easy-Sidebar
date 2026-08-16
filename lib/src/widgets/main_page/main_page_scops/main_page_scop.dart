@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import '../../../logic/slect_item/select_item_cubit.dart';
 
+///
 class MainPageScop extends InheritedWidget {
+  ///
   final Duration duration;
+
+  ///
   final Curve curve;
+
+  ///The selectItemCubit instance
   final SelectItemCubit selectItemCubit;
+
+  ///
   const MainPageScop({
     super.key,
     required this.duration,
@@ -13,6 +21,7 @@ class MainPageScop extends InheritedWidget {
     required super.child,
   });
 
+  ///
   static MainPageScop of(BuildContext context) =>
       context.getInheritedWidgetOfExactType<MainPageScop>() as MainPageScop;
   @override

@@ -13,3 +13,7 @@
 ## 0.1.0-alpha.6+4
 
 - Solve SideBarButton position and width issue.
+
+## 0.1.0-alpha.7+5
+
+- Solve public_member_api_docs issue.

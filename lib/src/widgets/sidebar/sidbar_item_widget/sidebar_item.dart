@@ -10,20 +10,45 @@ import '../../../constants/default_border_raduis.dart';
 import '../../../animations/general_page_animation.dart';
 import '../../../logic/slect_item/select_item_cubit.dart';
 
+///
 class SidebarItem extends StatelessWidget {
+  ///
   final Widget icon;
+
+  /// The connected page with current item
   final Widget page;
+
+  ///
   final String? title;
+
+  ///
   final Color? iconColor;
+
+  ///
   final double? iconSize;
+
+  ///
   final Color? hoverColor;
+
+  ///
   final Color selectColor;
+
+  ///
   final double borderRadius;
+
+  ///
   final TextStyle? textStyle;
+
+  ///
   final Color selectBackgroundColor;
+
+  ///
   final EdgeInsetsDirectional itemMargin;
+
+  ///
   final EdgeInsetsDirectional itemPadding;
 
+  /// Create sidebar item
   const SidebarItem({
     required this.icon,
     required this.page,

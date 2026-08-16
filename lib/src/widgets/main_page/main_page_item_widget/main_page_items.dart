@@ -6,11 +6,21 @@ import '../../../util/enums/sidebar_animation.dart';
 import '../../../animations/general_page_animation.dart';
 import '../../../logic/slect_item/select_item_cubit.dart';
 
+///
 class MainPageItems extends StatelessWidget {
+  ///
   final Curve curve;
+
+  ///
   final Sidebar sidebar;
+
+  ///
   final Duration mainPagesDuration;
+
+  ///
   final SideBarAnimation mainPageAnimation;
+
+  ///
   const MainPageItems({
     required this.curve,
     required this.sidebar,

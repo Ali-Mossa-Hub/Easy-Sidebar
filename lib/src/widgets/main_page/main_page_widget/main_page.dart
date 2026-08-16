@@ -9,13 +9,24 @@ import '../../../util/enums/sidebar_animation.dart';
 import '../../../logic/change_sidebar_width/change_sidebar_width_cubit.dart';
 import '../../../logic/slect_item/select_item_cubit.dart';
 
+/// The main page of the package
 class MainPage extends StatefulWidget {
+  ///
   final Curve curve;
+
+  ///
   final Sidebar sidebar;
+
+  ///  Close the sidebar when the app starts
   final bool sideBarIsClosed;
+
+  ///
   final Duration mainPagesDuration;
+
+  ///
   final SideBarAnimation animation;
 
+  ///
   const MainPage({
     required this.sidebar,
     this.curve = Curves.linear,

@@ -4,25 +4,60 @@ import '../../../constants/default_durations.dart';
 import '../../../constants/default_text_control.dart';
 import '../../../logic/slect_item/select_item_cubit.dart';
 
+/// Used to icrease maintainablity and legibility
 class SidebarItemWidget extends StatelessWidget {
+  ///
   final Widget icon;
+
+  ///
   final Widget page;
+
+  ///
   final String? title;
+
+  ///
   final Color? iconColor;
+
+  ///
   final double? iconSize;
+
+  ///
   final Color? hoverColor;
+
+  ///
   final Color selectColor;
+
+  ///
   final double borderRadius;
+
+  ///
   final TextStyle? textStyle;
+
+  ///
   final Widget selectedWidget;
+
+  ///
   final bool hideTitleOnCollaps;
+
+  ///
   final Color selectBackgroundColor;
+
+  ///
   final SelectItemCubit selectItemCubit;
+
+  ///
   final EdgeInsetsDirectional itemMargin;
+
+  ///
   final EdgeInsetsDirectional itemPadding;
+
+  ///
   final TextStyle defaultTextStyle;
+
+  ///
   final IconThemeData iconThemeData;
 
+  ///
   const SidebarItemWidget({
     required this.icon,
     required this.page,

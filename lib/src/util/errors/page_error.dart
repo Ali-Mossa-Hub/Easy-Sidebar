@@ -1,6 +1,9 @@
+/// general pages error
 class PageError implements Exception {
+  ///
   final String message;
 
+  ///
   PageError(this.message);
 
   @override

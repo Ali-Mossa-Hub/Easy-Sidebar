@@ -8,20 +8,48 @@ import '../../../util/enums/sidebar_animation.dart';
 import '../../../logic/slect_item/select_item_cubit.dart';
 import '../../../logic/change_sidebar_width/change_sidebar_width_cubit.dart';
 
+/// Sidebar widget class
 class Sidebar extends StatelessWidget {
+  ///
   final double maxWidth;
+
+  ///
   final double minWidth;
+
+  /// Usually used with logos
   final Widget topSidebar;
+
+  ///
   final Gradient? gradient;
+
+  ///
   final Curve sideBarItemCurve;
+
+  ///
   final Color? backgroundColor;
+
+  ///
   final Duration sideBarDuration;
+
+  /// Changing sidebar items animtion
   final SideBarAnimation animation;
+
+  /// Changing sidebar items animtion duration
   final Duration sideBarItemDuration;
+
+  ///
   final BorderRadiusGeometry borderRadius;
+
+  ///
   final List<SidebarItem> listSidebarItems;
+
+  ///
   final EdgeInsetsDirectional sidebarMargin;
+
+  /// Collaps/Expand sidebar icon button
   final SidebarIconButton? sidebarIconButton;
+
+  /// Create sidebar widget
   const Sidebar({
     required this.listSidebarItems,
     this.maxWidth = 200,

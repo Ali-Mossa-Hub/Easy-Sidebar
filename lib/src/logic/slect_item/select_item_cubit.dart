@@ -5,10 +5,15 @@ import '../../core/middleware/sidebar_middleware.dart';
 
 part 'select_item_state.dart';
 
+///
 class SelectItemCubit extends Cubit<SelectItemState> {
+  ///
   final sidebarMiddleware = GetItFiles.getItInstance()<SidebarMiddleware>();
+
+  ///
   SelectItemCubit() : super(SelectItemInitial());
 
+  /// pushing new page
   void changePage(Widget page, {bool isSidebarItem = false}) {
     emit(LoadingSelectItemState());
     try {
@@ -23,6 +28,7 @@ class SelectItemCubit extends Cubit<SelectItemState> {
     }
   }
 
+  /// removing current page
   void removeCurrentPage() {
     emit(LoadingRemovePageState());
     try {
